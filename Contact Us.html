@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact Furry Buddy Grooming Salon in Braamfontein for bookings, enquiries and directions.">
+<meta name="author" content="Boipelo Mokgatla">
+<meta name="keywords" content="contact dog groomer, pet grooming location, Braamfontein dog salon">
+<title>Contact Us</title>
+<link rel="stylesheet" href="CSS/contactus.css">
+</head>
+<body >
+
+<header>
+<nav>
+<table>
+<tr>
+<td>
+<img src="Images/logo2.jpg" alt="Furry Buddy Grooming Salon Logo" width="100" height="100">
+</td>
+<td>
+<div class="salon-name">Furry Buddy Grooming Salon</div>
+<div class="slogan">For the love of dogs</div>
+</td>
+<td style="width: 150px;"></td>
+</tr>
+</table>
+<ul>
+<li><a href="Home page.html">Home Page</a></li>
+<li><a href="About Us.html">About Us</a></li>
+<li><a href="product and services.html">Products and Services</a></li>
+<li><a href="Before & After.html">Before & After</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+</ul>
+ </nav>
+</header>
+
+<main>
+<h2>Contact Us</h2>
+<p>
+We are reachable in the folowing methods:
+</p>
+
+<div class="contact-info">
+<p><b> Address:</b> 56 Jorrissen street, Braamfontein, Johannesburg 2001</p>
+<p><b> Phone:</b> (060)-458-9145</p>
+<p><b> Telephone:</b>(010)-725-8885</p>
+<p><b> email:</b> furrybuddysalon25@gmail.com</p>
+
+<p><b>Operating hours:</b></p>
+<p id="openStatus" style="font-weight:bold;"></p>
+<p>MON - 08:00-17:00</p>
+<p>TUE - 08:00-17:00</p>
+<p>WED - 08:00-17:00</p>
+<p>THU - 08:00-17:00</p>
+<p>FRI - 09:00-13:00</p>
+<p>SAT - 09:00-13:00</p>
+<p>SUN - CLOSED</p>
+</div>
+<h2 style="text-align:center; margin-top:30px;">Send Us an Email</h2>
+
+<form action="https://formspree.io/f/xldaangj" method="POST"
+style="max-width:600px; margin:20px auto; padding:20px; background:#fafafa;
+border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+
+    <div style="margin-bottom:15px;">
+        <label>Your Name:</label>
+        <input type="text" name="name" required
+        style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;">
+    </div>
+
+    <div style="margin-bottom:15px;">
+        <label>Your Email:</label>
+        <input type="email" name="email" required
+        style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;">
+    </div>
+
+    <div style="margin-bottom:15px;">
+        <label>Your Message:</label>
+        <textarea name="message" rows="4" required
+        style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;"></textarea>
+    </div>
+
+    <button type="submit"
+    style="width:100%; background:#6d5b8b; color:white; padding:12px; border:none;
+    border-radius:6px; cursor:pointer; font-size:16px;">
+        Send Message
+    </button>
+</form>
+<iframe
+ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.103252329751!2d28.03044497621468!3d-26.193319277083177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b06492b13%3A0xa93a927478737a07!2s56%20Jorissen%20St%2C%20Braamfontein%2C%20Johannesburg%2C%202017!5e0!3m2!1sen!2sza!4v1756293628855!5m2!1sen!2sza" 
+style="border:0; width:100%; height:300px; border-radius:10px; margin-top:20;"
+loading="lazy">
+</iframe>
+</main>
+<
+<footer>
+<p>&copy;ST10471632</p>
+<p>
+Tel:<a>+010 725 8885</a>
+</p>
+<p>
+email: <href="email:furrybuddysalon25@gmail.com">furrybuddysalon25@gmail.com</a>
+</p>
+<p>
+Address: 56 Jorrissen street, Braamfontein
+</p>
+</footer>
+<script>
+function checkOpenStatus() {
+    const now = new Date();
+    const day = now.getDay();   // 0 = Sunday, 1 = Monday...
+    const hour = now.getHours();
+
+    let open = false;
+
+    // Monday to Friday: 8:00–17:00
+    if (day >= 1 && day <= 5) {
+        if (hour >= 8 && hour < 17) open = true;
+    }
+
+    // Saturday: 9:00–13:00
+    if (day === 6) {
+        if (hour >= 9 && hour < 13) open = true;
+    }
+
+    document.getElementById("openStatus").innerHTML = 
+        open ? "🟢 We are OPEN now" : "🔴 We are CLOSED now";
+}
+
+checkOpenStatus();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+CHANGELOG
+
+## Added
+- Created basic HTML structure for all pages:
+  - Home
+  - About Us
+  - Products & Services
+  - Before & After
+  - Contact Us
+- Added header and navigation menu.
+- Inserted placeholder text and initial layout.
+
+Visual Styling
+## Added
+- Applied CSS styling across all pages.
+- Styled navigation bar, header, footer, and layout sections.
+- Added salon color theme (brown + light brown tones).
+- Added custom fonts and spacing adjustments.
+
+ Gallery & Service Cards
+## Added
+- Services section with images and pricing.
+- CSS hover animation.
+- Lightbox gallery with next/previous controls.
+- Clickable service cards with animation.
+
+ SEO Enhancements
+##Added
+- <title> tags for all pages.
+- Meta descriptions.
+- Meta keywords.
+- Alt text for all images.
+- Improved image file naming for SEO.
+
+ Enquiry Form (Products & Services Page)
+##Added
+- Full Name, Email, Service dropdown, Message fields.
+- Styled form using CSS card layout.
+- JavaScript validation:
+  - Required fields
+  - Email format checking
+- Response message after submit event.
+
+ Dynamic Content Script
+##Added
+- JavaScript script for “OPEN NOW / CLOSED NOW”.
+- Live checking based on:
+  - Day of week
+  - Current hour
+- Integrated dynamic status under Operating Hours.
+
+Contact Form (Contact Us Page)
+## Added
+- Name, Email, Message form fields.
+- Basic input validation (HTML5).
+- Email processing using Formspree API.
+- Success message display.
+- Map repositioned and resized
+
+ Layout Improvements
+##Updated
+- Adjusted footers to prevent overlap.
+- Improved spacing between sections.
+- Adjusted map width and positioning.
+- Enhanced readability of content blocks.
+
+ Final
+### Updated
+- Improved About Us layout with Mission block + icons.
+- Consistent button styling across website.
+- Center-aligned enquiry forms.
+- Final cleanup of indentation and dead code.
+
+All functionality implemented
+- Gallery lightbox  
+- Dynamic content  
+- SEO  
+- Form validation + processing  
+- Contact email functionality

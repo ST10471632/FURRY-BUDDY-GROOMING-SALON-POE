@@ -1,0 +1,188 @@
+/*Reset*/
+
+
+header {
+	background-color: #D2B48C;
+	padding: 10px 0;
+}
+
+nav {
+	border: 2px solid black;
+	padding: 15px;
+	width: 800px;
+	margin: 0 auto 20px auto;
+	border-radius: 8px;
+	background-color: #F5F5DC;
+}
+
+nav table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+nav table td { 
+text-align: centre;
+vertical-align: middle;
+font-family: Arial, sans-serif;
+}
+
+nav table td:first-child {
+	width: 150px;
+}
+
+nav table td:last-child {
+	width: 150px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 0 0;
+	display: flex;
+	justify-content: centre;
+	gap: 20px;
+}
+
+nav ul li a { 
+text-decoration: underline;
+color: brown; 
+font-family: Arial, sans-serif;
+font-size: 16px;
+}
+
+main h3 {
+	text-align: centre;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+footer {
+	background-color: #D2B48C;
+	color: black;
+	text-align: centre;
+	padding: 3px 0;
+	width: 100%;
+	font-family: Arial, sans-serif;
+	font-size: 10px; 
+	box-sizing: border-box;
+}
+
+footer p { 
+margin: 4px 0;
+color: 5C3A00;
+}
+
+footer a {
+	color: #5C3A00;
+	text-decoration: none;
+}
+
+
+
+.salon-name {
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.slogan {
+	font-size: 26px;
+	font-weight: 300;
+	font-style: italic;
+	color: gray;
+}
+ /* Hamburger menu (hidden on desktop) */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+      }
+
+      .nav-links a {
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #444;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+	
+.about-banner {
+  max-width: 700px;
+  margin: 18px auto;
+  padding: 0 15px;
+}
+.about-banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+/* Banner */
+.about-banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Mission Box */
+.mission-box {
+    background: #ffffff;
+    padding: 20px 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+}
